@@ -1,0 +1,256 @@
+/* GLOBAL DARK THEME */
+
+body{
+margin:0;
+font-family: 'Poppins', sans-serif;
+
+background: linear-gradient(135deg,#050505,#12002a,#000000);
+
+color:white;
+
+animation: bgMove 15s infinite alternate;
+}
+
+/* BACKGROUND ANIMATION */
+
+@keyframes bgMove{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+/* HEADER */
+
+header{
+
+background: rgba(10,0,20,0.7);
+
+backdrop-filter: blur(12px);
+
+padding:20px;
+text-align:center;
+
+box-shadow:0 0 20px #9b4dff;
+
+}
+
+/* NAVBAR */
+
+nav a{
+
+color:#b57cff;
+
+margin:18px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+font-size:18px;
+
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+color:#ffffff;
+
+text-shadow:0 0 10px #b57cff;
+
+}
+
+/* SECTION CARDS */
+
+section{
+
+padding:60px;
+
+margin:40px;
+
+border-radius:18px;
+
+background: linear-gradient(145deg,#12002a,#050010);
+
+box-shadow:
+
+10px 10px 25px rgba(0,0,0,0.8),
+
+-3px -3px 10px rgba(180,120,255,0.15);
+
+transition:0.4s;
+
+}
+
+/* 3D HOVER EFFECT */
+
+section:hover{
+
+transform: translateY(-12px) scale(1.01);
+
+box-shadow:
+
+15px 15px 35px rgba(0,0,0,0.9),
+
+-4px -4px 12px rgba(180,120,255,0.25);
+
+}
+
+/* PROFILE IMAGE */
+
+.profile-pic{
+
+width:170px;
+height:170px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #b57cff;
+
+box-shadow:
+
+0 0 25px #b57cff,
+0 0 50px rgba(181,124,255,0.6);
+
+transition:0.4s;
+
+}
+
+.profile-pic:hover{
+
+transform:scale(1.08);
+
+}
+
+/* PROJECT CARDS */
+
+.project{
+
+background: linear-gradient(145deg,#1a0033,#050010);
+
+padding:25px;
+
+margin-top:25px;
+
+border-radius:14px;
+
+box-shadow:
+
+8px 8px 25px rgba(0,0,0,0.8),
+
+-3px -3px 10px rgba(181,124,255,0.2);
+
+transition:0.4s;
+
+}
+
+.project:hover{
+
+transform:scale(1.05) translateY(-6px);
+
+box-shadow:
+
+12px 12px 35px rgba(0,0,0,0.9),
+
+0 0 20px #b57cff;
+
+}
+
+/* BUTTONS */
+
+.resume-btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:14px 28px;
+
+background:linear-gradient(135deg,#7a2cff,#c084fc);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+box-shadow:
+
+0 0 15px #9b4dff;
+
+transition:0.3s;
+
+}
+
+.resume-btn:hover{
+
+transform:scale(1.07);
+
+box-shadow:
+
+0 0 25px #c084fc;
+
+}
+
+/* CONTACT FORM */
+
+input,textarea{
+
+width:100%;
+
+padding:14px;
+
+margin-top:12px;
+
+background:#0c001a;
+
+border:1px solid #9b4dff;
+
+color:white;
+
+border-radius:8px;
+
+outline:none;
+
+}
+
+input:focus,textarea:focus{
+
+box-shadow:0 0 10px #9b4dff;
+
+}
+
+/* SUBMIT BUTTON */
+
+button{
+
+margin-top:18px;
+
+padding:12px 22px;
+
+background:linear-gradient(135deg,#7a2cff,#c084fc);
+
+border:none;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 18px #c084fc;
+
+}
